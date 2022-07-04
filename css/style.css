@@ -1036,6 +1036,7 @@ body .theme-button:hover span {opacity: 1;}
   background-size: cover;
   background-attachment: fixed;
   margin-top: 125px;
+  border-radius: 5px;
 }
 .contact-us-one.m0 {margin: 0;}
 .contact-us-one .overlay {
