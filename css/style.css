@@ -176,6 +176,7 @@
 .our-feature-five .text .learn-more  {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  color: #fff;
  }
 .tran4s,.our-features-one .single-feature .icon-box img,.hover-effect-one .single-blog-post .image-box img {
   -webkit-transition: all 0.4s ease-in-out;
@@ -1036,7 +1037,7 @@ body .theme-button:hover span {opacity: 1;}
   background-size: cover;
   background-attachment: fixed;
   margin-top: 125px;
-  border-radius: 5px;
+  
 }
 .contact-us-one.m0 {margin: 0;}
 .contact-us-one .overlay {
@@ -1146,7 +1147,7 @@ body .theme-button:hover span {opacity: 1;}
 }
 .theme-footer .top-footer-data-wrapper .footer-logo .email {
   font-size: 22px;
-  color: #222222;
+  color: #fff;
   display: block;
   margin: 12px 0 15px;
 }
@@ -1158,7 +1159,7 @@ body .theme-button:hover span {opacity: 1;}
 .theme-footer .top-footer-data-wrapper .footer-list ul li a {
   font-size: 17px;
   line-height: 36px;
-  color: rgb(33,33,33,0.7);
+  color: #fff;
   display: block;
 }
 .theme-footer .bottom-footer {padding: 45px 0;}
