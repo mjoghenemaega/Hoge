@@ -200,9 +200,9 @@
   font-family: 'Anton';
   text-decoration: underline;
   text-decoration-color: #ffae00;
-  font-size: 45px;
+  font-size: 65px;
   line-height: 50px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 .theme-title .upper-heading {
   font-size: 20px;
@@ -962,12 +962,15 @@ top:60px;  font-family: 'Anton'; font-size: 1.7rem; position: absolute; Left: 20
   line-height: 60px;
 }
 .our-feature-two .text .learn-more {
-  font-family: 'brandon_grotesquemedium';
-  font-size: 22px;
-  color: #fff;
-  background-color: #d19410;
-  padding: 10px;
+  width: 200px;
+  font-family: 'Anton';
+  line-height: 50px;
   border-radius: 25px;
+  color: #000;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 28px;
+  background:linear-gradient( 45deg, #ffae00, #ffae00 100%);
 }
 .our-feature-two .text .learn-more i {vertical-align: middle;font-size: 25px;margin-left: 12px;}
 .our-feature-two .text p {padding: 30px 0;}
@@ -1103,25 +1106,60 @@ top:60px;  font-family: 'Anton'; font-size: 1.7rem; position: absolute; Left: 20
 }
 /*----------------------- Theme Counter ------------------*/
 .theme-counter .bg-image {
-  background: url(../images/home/bg3.png) no-repeat center;
+  background: #000;
   padding: 30px 0 120px;
+  border-radius: 22px;
+  margin-top: 22px;
+  border-top: 22px solid #ffae00;
+}
+.theme-counter .bg-image  img {
+border: 7px solid #ffae00;
+border-radius: 50%;
+height: 4rem;
+margin: auto;
+text-align: center;
+
+}
+.theme-counter .bg-image h4 {
+  font-size:30px;
+  padding-top: 10px;
+  font-weight: bold;
+  text-align: center;
+  
+  }
+  .theme-counter .bg-image  h4 span {
+    color: #ffae00;
+    text-align: center;
+    
+  }
+.theme-counter .bg-image .row{
+  background: url(../images/home/bg3.png) no-repeat center;
+ 
 }
 .theme-counter .bg-image .theme-title p {
   font-size: 20px;
   line-height: 35px;
-  text-align: right;
+  
   padding: 10px 0 0 178px;
+  font-weight: 900;
 }
 .theme-counter .bg-image .counter-wrapper {
   padding: 55px 100px 0;
   text-align: center;
+  
+}
+.theme-counter .bg-image .counter-wrapper .icon{
+ font-size: 36px;
+ color: #ffae00;
+  
 }
 .theme-counter .bg-image .counter-wrapper .number {
   font-family: 'brandon_grotesquelight';
-  font-size: 36px;
+  font-size: 27px;
   color: #fff;
+  font-weight: bold;
 }
-.theme-counter .bg-image .counter-wrapper .number .timer {font-size: 65px;}
+.theme-counter .bg-image .counter-wrapper .number .timer {font-size: 22px;}
 .theme-counter .bg-image .counter-wrapper p {
   font-family: 'brandon_grotesque_regularRg';
   font-size: 24px;
@@ -1429,13 +1467,20 @@ background-image: url(images/l);}
   padding: 28px 0 24px;
 }
 .about-cryto .text {
-  font-size: 17px;
+  font-size: 20px;
   color: #fff;
   padding-bottom: 32px;
+  font-weight: bold;
+  color: #ffae00;
+}
+.about-cryto .text p {
+ 
+  color: #ffae00;
 }
 .about-cryto .know-more {
   font-family: 'brandon_grotesquemedium';
   font-size: 20px;
+  font-weight: bolder;
   color: #fff;
 }
 .about-cryto .know-more a {text-decoration: underline;}
@@ -1469,11 +1514,24 @@ background-image: url(images/l);}
 .about-cryto.style-two .know-more {color: #fff;}
 .about-cryto.style-two .text {color: #fff;}
 .about-cryto.style-two .learn-more {
-  width: 160px;
+  width: 200px;
+  font-family: 'Anton';
   line-height: 50px;
   border-radius: 25px;
-  color: #fff;
+  color: #000;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 28px;
+  background:linear-gradient( 45deg, #ffae00, #ffae00 100%);
+}
+.roadmap a {
+  width: 200px;
+  font-family: 'Anton';
+  line-height: 50px;
+  border-radius: 25px;
+  color: #000;
+  text-align: center;
+  margin-top: 20px;
   margin-bottom: 28px;
   background:linear-gradient( 45deg, #ffae00, #ffae00 100%);
 }
@@ -1492,7 +1550,7 @@ background-image: url(images/l);}
 .about-cryto.style-two .single-box:nth-child(3) {bottom:-230px;right:50px;}
 .about-cryto.style-two .single-box:nth-child(4) {top:-215px; left:10px;}
 
-.about-cryto.style-two .single-box h3 {padding: 22px 0;}
+.about-cryto.style-two .single-box h3 {padding: 22px 0; color: #ffae00; font-weight: bold;}
 /*---------------- Our Feature Three ------------------*/
 .our-features-three {
   background: #1217a4;
@@ -2002,9 +2060,15 @@ background-image: url(images/l);}
   padding-top: 15px;
 }
 .our-feature-five .text .learn-more {
-  font-family: 'brandon_grotesquemedium';
-  font-size: 22px;
-  color: #3c3c3c;
+  width: 200px;
+  font-family: 'Anton';
+  line-height: 50px;
+  border-radius: 25px;
+  color: #000;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 28px;
+  background:linear-gradient( 45deg, #ffae00, #ffae00 100%);
 }
 .our-feature-five .text .learn-more i {vertical-align: middle;font-size: 25px;margin-left: 12px;}
 .our-feature-five .text p {padding: 30px 0;}
