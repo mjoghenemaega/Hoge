@@ -43,7 +43,7 @@
 @import url('../fonts/custom-font/bg-l/stylesheet.css');
 @import url('../fonts/custom-font/bg-reg/stylesheet.css');
 @import url('../fonts/custom-font/lovelo/stylesheet.css');
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*----bootstrap css ----- */
 @import url('../vendor/bootstrap/css/bootstrap.min.css');
 /*----font awesome -------*/
@@ -81,12 +81,25 @@
   overflow: hidden;
 }
 #loader {
-  background: url(../images/hogeprere\ \(1\).gif);
-  width: 120px;
-  height: 120px;
+  background: url(../images/hogelog0.png);
+  width: 250px;
+  height: 250px;
   position: relative;
-  top: 50%;
+  top: 40%;
   margin: -32px auto 0 auto;
+ 
+}
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 /*** 
 
@@ -184,10 +197,12 @@
  }
 /*--------------- Theme Title ------------*/
 .theme-title h2 {
-  font-family: 'brandon_grotesquemedium';
-  font-size: 55px;
-  line-height: 65px;
-  font-weight: normal;
+  font-family: 'Anton';
+  text-decoration: underline;
+  text-decoration-color: #ffae00;
+  font-size: 45px;
+  line-height: 50px;
+  font-weight: bold;
 }
 .theme-title .upper-heading {
   font-size: 20px;
@@ -342,7 +357,7 @@ body .theme-button:hover span {opacity: 1;}
 .theme-main-menu.fixed.full-width {padding: 10px 80px;}
 /*----------------------- Theme Banner One -------------------------*/
 .theme-banner-one {
-  background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../images/pace.gif) no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.9)) , url(../images/bored\ panda.gif) no-repeat center;
   background-size: cover;
   
 }
@@ -351,6 +366,27 @@ body .theme-button:hover span {opacity: 1;}
   font-size: 22px;
   line-height: 37px;
   padding: 35px 0 50px;
+}
+
+
+.socials
+{
+  
+  display: flex;
+  flex-direction: row;
+}
+.socials img
+{
+  height: 4rem;
+  width: 4rem;
+}
+@media (max-width: 769px) {
+.socials img
+{
+  height: 3rem;
+  width: 3rem;
+}
+
 }
 .theme-banner-one .main-text-wrapper .button-group>li:first-child a {
   width: 140px;
@@ -406,9 +442,9 @@ body .theme-button:hover span {opacity: 1;}
 .theme-banner-one .main-text-wrapper .play-buttton:hover {color: #fff; }
 .theme-banner-one .illustration {
   position: absolute;
-  top:25%;
+  top:60%;
   right: 10%;
-  z-index: -1;
+  z-index: 1;
 }
 .theme-banner-one .icon-shape-one {
   position: absolute;
@@ -597,36 +633,46 @@ body .theme-button:hover span {opacity: 1;}
 /*----------------- Stock Market Price -----------------*/
 .stock-market-price {padding-bottom: 50px;}
 .stock-market-price #market-rate {padding: 10px 15px;}
+
 .stock-market-price #market-rate .main-wrapper {
-  background: #fff;
+  
+  background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,  url(../images/ezgif.com-gif-maker\ \(1\).gif);
+  background-size: cover;
   box-shadow: 0px 3px 70px 0px rgba(187, 206, 233, 0.2);
   border-radius: 3px;
   padding: 30px 20px 30px 40px;
   position: relative;
   margin: 40px 0;
   text-align: left;
+  height: 14rem;
 }
 .stock-market-price #market-rate .main-wrapper .amount {
-  font-family: 'brandon_grotesquemedium';
-  font-size: 28px;
-  color: #1a1a1a;
+  font-family: 'Yellowtail';
+  position: absolute;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #ffae00;
+  z-index: 1;
   padding-bottom: 5px;
+  
+  top:40px;
 }
-.stock-market-price #market-rate .main-wrapper .title {color: rgba(26,26,26,0.5);}
+.stock-market-price #market-rate .main-wrapper .title {color: #fff; font-weight: bolder; right: 20px;
+  top:80px;  font-family: 'Anton'; font-size: 2.5rem; position: absolute; Left: 20px;}
 .stock-market-price #market-rate .main-wrapper .current-info {
   position: absolute;
   right: 20px;
-  top:22px;
+  top:60px;
 }
-.stock-market-price #market-rate .main-wrapper .current-info.range-down {color: #ff4c2f;}
-.stock-market-price #market-rate .main-wrapper .current-info.range-up {color: #08dd67;}
+
 
 .stock-market-price #market-rate .main-wrapper .icon {font-size: 8px;}
 .stock-market-price #market-rate .main-wrapper .rate {
   display: block;
   position: relative;
-  margin-top: -9px;
-  padding-bottom: 22px;
+  margin-top: 70px;
+  margin-left: 17px;
+  font-weight: bold;
 } 
 .stock-market-price #market-rate .main-wrapper .rate:before {
   content: '';
@@ -638,6 +684,176 @@ body .theme-button:hover span {opacity: 1;}
 }
 .stock-market-price #market-rate .main-wrapper .range-down .rate:before {background: linear-gradient(90deg, rgb(255,116,93) 10%, rgba(255,255,255,1) 100%);}
 .stock-market-price #market-rate .main-wrapper .range-up .rate:before {background: linear-gradient(90deg, rgb(8,221,103) 10%, rgba(255,255,255,1) 100%);}
+
+.stock-market-price #market-rate .main-wrapper1 {
+  
+  background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,  url(../images/game\ disply.png);
+  background-size: cover;
+  box-shadow: 0px 3px 70px 0px rgba(187, 206, 233, 0.2);
+  border-radius: 3px;
+  padding: 30px 20px 30px 40px;
+  position: relative;
+  margin: 40px 0;
+  text-align: left;
+  height: 14rem;
+}
+.stock-market-price #market-rate .main-wrapper1 .amount {
+  font-family: 'Yellowtail';
+  position: absolute;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #ffae00;
+  z-index: 1;
+  padding-bottom: 5px;
+  
+  top:40px;
+}
+.stock-market-price #market-rate .main-wrapper1 .title {color: #fff; font-weight: bolder; right: 20px;
+  top:80px;  font-family: 'Anton'; font-size: 2.5rem; position: absolute; Left: 20px;}
+.stock-market-price #market-rate .main-wrapper1 .current-info {
+  position: absolute;
+  right: 20px;
+  top:60px;
+}
+
+.stock-market-price #market-rate .main-wrapper1 .icon {font-size: 8px;}
+.stock-market-price #market-rate .main-wrapper1 .rate {
+  display: block;
+  position: relative;
+  margin-top: 70px;
+  margin-left: 17px;
+  font-weight: bold;
+ 
+} 
+.stock-market-price #market-rate .main-wrapper1 .rate:before {
+  content: '';
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left:0;
+}
+.stock-market-price #market-rate .main-wrapper1 .range-down .rate:before {background: linear-gradient(90deg, rgb(255,116,93) 10%, rgba(255,255,255,1) 100%);}
+.stock-market-price #market-rate .main-wrapper1 .range-up .rate:before {background: linear-gradient(90deg, rgb(8,221,103) 10%, rgba(255,255,255,1) 100%);}
+
+
+
+
+
+
+
+
+
+.stock-market-price #market-rate .main-wrapper2 {
+  
+  background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,  url(../images/HOGE_MERCH.png);
+  background-size: contain;
+  box-shadow: 0px 3px 70px 0px rgba(187, 206, 233, 0.2);
+  border-radius: 3px;
+  padding: 30px 20px 30px 40px;
+  position: relative;
+  margin: 40px 0;
+  text-align: left;
+  height: 14rem;
+}
+.stock-market-price #market-rate .main-wrapper2 .amount {
+  font-family: 'Yellowtail';
+  position: absolute;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #ffae00;
+  z-index: 1;
+  padding-bottom: 5px;
+  
+  top:40px;
+}
+.stock-market-price #market-rate .main-wrapper2 .title {color: #fff; font-weight: bolder; right: 20px;
+  top:80px;  font-family: 'Anton'; font-size: 2.5rem; position: absolute; Left: 20px;}
+.stock-market-price #market-rate .main-wrapper2 .current-info {
+  position: absolute;
+  right: 20px;
+  top:60px;
+}
+
+.stock-market-price #market-rate .main-wrapper2 .icon {font-size: 8px;}
+.stock-market-price #market-rate .main-wrapper2 .rate {
+  display: block;
+  position: relative;
+  margin-top: 70px;
+  margin-left: 17px;
+  font-weight: bold;
+} 
+.stock-market-price #market-rate .main-wrapper2 .rate:before {
+  content: '';
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left:0;
+}
+.stock-market-price #market-rate .main-wrapper2 .range-down .rate:before {background: linear-gradient(90deg, rgb(255,116,93) 10%, rgba(255,255,255,1) 100%);}
+.stock-market-price #market-rate .main-wrapper2 .range-up .rate:before {background: linear-gradient(90deg, rgb(8,221,103) 10%, rgba(255,255,255,1) 100%);}
+
+
+
+
+
+
+
+
+
+
+.stock-market-price #market-rate .main-wrapper3 {
+  
+  background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,  url(../images/aerospace.png);
+  background-size: cover;
+  box-shadow: 0px 3px 70px 0px rgba(187, 206, 233, 0.2);
+  border-radius: 3px;
+  padding: 30px 20px 30px 40px;
+  position: relative;
+  margin: 40px 0;
+  text-align: left;
+  height: 14rem;
+}
+.stock-market-price #market-rate .main-wrapper3 .amount {
+  font-family: 'Yellowtail';
+  position: absolute;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #ffae00;
+  z-index: 1;
+  padding-bottom: 5px;
+  
+  top:40px;
+}
+.stock-market-price #market-rate .main-wrapper3 .title {color: #fff; font-weight: bolder; right: 20px;
+  top:80px;  font-family: 'Anton'; font-size: 2.5rem; position: absolute; Left: 20px;}
+.stock-market-price #market-rate .main-wrapper3 .current-info {
+  position: absolute;
+  right: 20px;
+  top:60px;
+}
+
+.stock-market-price #market-rate .main-wrapper3 .icon {font-size: 8px;}
+.stock-market-price #market-rate .main-wrapper3 .rate {
+  display: block;
+  position: relative;
+  margin-top: 70px;
+  margin-left: 17px;
+  font-weight: bold;
+} 
+.stock-market-price #market-rate .main-wrapper3 .rate:before {
+  content: '';
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left:0;
+}
+.stock-market-price #market-rate .main-wrapper3 .range-down .rate:before {background: linear-gradient(90deg, rgb(255,116,93) 10%, rgba(255,255,255,1) 100%);}
+.stock-market-price #market-rate .main-wrapper3 .range-up .rate:before {background: linear-gradient(90deg, rgb(8,221,103) 10%, rgba(255,255,255,1) 100%);}
+
+
 /*--------------------- Our Features --------------------*/
 .our-features-one {
   padding: 120px 0 155px;
@@ -701,10 +917,13 @@ body .theme-button:hover span {opacity: 1;}
 .our-features-one .single-feature.border-fix:before {left:-75px;}
 .our-features-one .single-feature.border-fix:after {right: -75px;}
 /*-------------------- Our Feature Two --------------------*/
-.our-feature-two {padding: 200px 0 320px;}
+.our-feature-two {padding: 50px 0 70px;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 1.5)) ,  url(../images/E9FSxNCWEAIm6L_-1.mp4-low.gif);
+  }
 .our-feature-two .text {
   position: relative;
-  padding: 0 0 60px 60px;
+  padding: 0 0 0 60px;
 }
 .our-feature-two .text .number {
   font-family: 'loveloline_light';
@@ -741,7 +960,10 @@ body .theme-button:hover span {opacity: 1;}
 .our-feature-two .text .learn-more {
   font-family: 'brandon_grotesquemedium';
   font-size: 22px;
-  color: #3c3c3c;
+  color: #fff;
+  background-color: #d19410;
+  padding: 10px;
+  border-radius: 25px;
 }
 .our-feature-two .text .learn-more i {vertical-align: middle;font-size: 25px;margin-left: 12px;}
 .our-feature-two .text p {padding: 30px 0;}
@@ -763,6 +985,9 @@ body .theme-button:hover span {opacity: 1;}
 .our-feature-two .single-block:nth-child(2) .img-box {
   border-right: 1px dashed #dcdcdc;
   border-radius:  0 20px 20px 0;
+}
+.our-feature-two .single-block .img-box img{
+  border-radius: 20px;
 }
 .our-feature-two .single-block:nth-child(2) .img-box>div {padding: 45px 65px 0 0;}
 .our-feature-two .single-block:nth-child(2) .text {padding: 80px 40px 55px 45px;}
@@ -956,7 +1181,8 @@ body .theme-button:hover span {opacity: 1;}
 }
 .our-work-progress .section-title-wrapper .theme-title {float: right;max-width: 400px;padding-top: 25px;}
 .our-work-progress .section-title-wrapper .theme-title p {padding-top: 25px;}
-.our-work-progress.style-two .main-wrapper .progress-slider-wrapper .inner-block {border:1px solid #e8e8e8;}
+.our-work-progress.style-two .main-wrapper .progress-slider-wrapper .inner-block {border:1px solid #e8e8e8;
+background-image: url(images/l);}
 .our-work-progress.style-two .theme-title h2 {font-size: 52px;}
 .our-work-progress .main-wrapper .progress-slider-wrapper .inner-block .date {margin: -15px 0 26px;}
 /*----------------------- Testimonial Section --------------------*/
@@ -1033,7 +1259,7 @@ body .theme-button:hover span {opacity: 1;}
 .testimonial-section .full-width .owl-theme .owl-dots {margin-top: 85px;}
 /*---------------------- Contact Us One -------------*/
 .contact-us-one {
-  background: url(../images/Join\ now.gif) no-repeat center;
+  background: url(../images/ezgif.com-gif-maker\ \(1\).gif) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   margin-top: 125px;
@@ -1195,12 +1421,12 @@ body .theme-button:hover span {opacity: 1;}
 .about-cryto .sub-text {
   font-size: 24px;
   line-height: 35px;
-  color: rgba(255,255,255,0.8);
+  color: #fff;
   padding: 28px 0 24px;
 }
 .about-cryto .text {
   font-size: 17px;
-  color: #c9c9d8;
+  color: #fff;
   padding-bottom: 32px;
 }
 .about-cryto .know-more {
@@ -1210,7 +1436,7 @@ body .theme-button:hover span {opacity: 1;}
 }
 .about-cryto .know-more a {text-decoration: underline;}
 .about-cryto.style-two {
-  background: #f9faff;
+  background: #17181d;
   padding: 235px 0 240px;
   overflow:hidden;
   position: relative;
@@ -1219,7 +1445,7 @@ body .theme-button:hover span {opacity: 1;}
   content: '';
   width: 103%;
   height: 270px;
-  background: #fff;
+  background: #ffae00;
   position: absolute;
   top:-130px;
   right:0;
@@ -1229,15 +1455,15 @@ body .theme-button:hover span {opacity: 1;}
   content: '';
   width: 103%;
   height: 270px;
-  background: #fff;
+  background: #ffae00;
   position: absolute;
   bottom:-130px;
   left:0;
   transform: rotate(-7deg);
 }
-.about-cryto.style-two .sub-text {color: #3e5065;}
-.about-cryto.style-two .know-more {color: #2c2c2c;}
-.about-cryto.style-two .text {color: #6a7587;}
+.about-cryto.style-two .sub-text {color: #fff;}
+.about-cryto.style-two .know-more {color: #fff;}
+.about-cryto.style-two .text {color: #fff;}
 .about-cryto.style-two .learn-more {
   width: 160px;
   line-height: 50px;
@@ -1245,21 +1471,23 @@ body .theme-button:hover span {opacity: 1;}
   color: #fff;
   text-align: center;
   margin-bottom: 28px;
-  background:linear-gradient( 45deg, rgb(0,166,253) 0%, rgb(0,208,223) 100%);
+  background:linear-gradient( 45deg, #ffae00, #ffae00 100%);
 }
 .about-cryto.style-two .icon-data {position: relative;height: 100%;}
 .about-cryto.style-two .single-box {
   width: 310px;
-  background: #fff;
+  background: #000;
   border-radius: 5px;
   box-shadow: 0px 0px 70px 0px rgba(139, 152, 171, 0.07);
   padding: 85px 40px 85px;
   position: absolute;
   z-index: 1;
 }
-.about-cryto.style-two .single-box:first-child {top:155px;left:-196px;}
-.about-cryto.style-two .single-box:nth-child(2) {top:-125px;right:50px;}
-.about-cryto.style-two .single-box:nth-child(3) {bottom:-175px;right:50px;}
+.about-cryto.style-two .single-box:first-child {top:185px;left:-196px;}
+.about-cryto.style-two .single-box:nth-child(2) {top:-205px;right:50px;}
+.about-cryto.style-two .single-box:nth-child(3) {bottom:-230px;right:50px;}
+.about-cryto.style-two .single-box:nth-child(4) {top:-215px; left:10px;}
+
 .about-cryto.style-two .single-box h3 {padding: 22px 0;}
 /*---------------- Our Feature Three ------------------*/
 .our-features-three {
