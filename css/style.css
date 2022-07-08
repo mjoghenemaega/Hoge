@@ -1147,6 +1147,7 @@ text-align: center;
   padding: 55px 100px 0;
   text-align: center;
   
+  
 }
 .theme-counter .bg-image .counter-wrapper .icon{
  font-size: 36px;
@@ -1164,14 +1165,75 @@ text-align: center;
   font-family: 'brandon_grotesque_regularRg';
   font-size: 24px;
   color: #fff;
+
 }
 /*----------------------- Our Work Progress -------------------*/
-.our-work-progress.bg-color {background: #f8fafc;}
+.our-work-progress.bg-color {  border: 1px solid #ffae00;
+  border-radius: 22px;background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.9)) , url(../images/bored\ panda.gif) no-repeat center;
+  background-size: cover;
+  }
 .our-work-progress {
   margin: 30px 0 110px;
   padding: 95px 0 55px;
 }
-.our-work-progress .main-wrapper {max-width: 1920px;margin: 0 auto;}
+.our-work-progress .main-wrapper .learn-more {
+ 
+  font-family: 'brandon_grotesquemedium';
+  background-color: #ffae00;
+  border-radius: 20px;
+  padding: 9px;
+
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+
+
+}
+.our-work-progress .main-wrapper .learn-more:hover {
+ background-color: lightblue;
+  
+
+
+}
+
+.our-work-progress .address .addre{
+  font-family: 'brandon_grotesquemedium';
+
+  font-size: 16px;
+
+}
+.our-work-progress .address a{
+  font-family: 'brandon_grotesquemedium';
+  background-color: #ffae00;
+  border-radius: 20px;
+  padding: 9px;
+
+  color: #000;
+  font-weight: bold;
+  text-align: center;;
+  
+
+}
+.our-work-progress .main-wrapper img {
+ 
+ 
+ width: 5rem;
+ height: 5rem;
+ padding: 7px;
+ margin: auto;
+
+
+}
+.our-work-progress .main-wrapper .gridy {
+ 
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  
+}
+.our-work-progress .main-wrapper {max-width: 1920px; margin: 0 auto;
+}
+
 .our-work-progress .main-wrapper .progress-slider-wrapper {
   float: right;
   padding-right: 15px;
@@ -1180,17 +1242,35 @@ text-align: center;
 .our-work-progress .main-wrapper .progress-slider-wrapper .inner-block {
   margin: 30px 0;
   box-shadow: 0px 0px 55px 0px rgba(134, 153, 174, 0.12);
-  background: #fff;
-  padding: 50px 7% 38px 18%;
+  background: #000;
+  padding: 50px 5% 38px 5%;
   position: relative;
+  height: 30rem;
   border-radius: 5px;
   z-index: 1;
 }
+.our-work-progress .main-wrapper .progress-slider-wrapper .inner-block .icon i {
+ color: #ffae00;
+ font-size: 55px;
+ font-weight: 600;
+ 
+
+}
+.our-work-progress .main-wrapper .progress-slider-wrapper .inner-block button {
+  color: #000;
+  background-color: #ffae00;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 22px;
+  margin: auto;
+ 
+ }
+ .our-work-progress .main-wrapper .progress-slider-wrapper .inner-block button:hover {background: #ffae56;}
 .our-work-progress .main-wrapper .progress-slider-wrapper .inner-block:before {
   content: '';
   width: 100%;
   height: 1px;
-  background: #f0f3f6;
+  background: #fff;
   position: absolute;
   left:0;
   bottom: 61px;
@@ -1198,21 +1278,22 @@ text-align: center;
 .our-work-progress .main-wrapper .progress-slider-wrapper .inner-block h3 {
   font-family: 'brandon_grotesquemedium';
   line-height: 30px;
-  color: #1b1b1b;
+  color: #fff;
   padding: 27px 0 25px;
 }
 .our-work-progress .main-wrapper .progress-slider-wrapper .inner-block .num {
   width: 50px;
   height: 50px;
-  border: 2px solid #eeeeee;
+  border: 2px solid #777;
   border-radius: 50%;
-  margin-top: 17px;
+  bottom:30px;
+  left: 30px;
   text-align: center;
   line-height: 50px;
   font-size:24px;
-  color: rgba(0,0,0,0.2);
-  background: #fff;
-  position: relative;
+  color: #000;
+  background: #ffae00;
+  position: absolute;
   z-index: 1;
 }
 .our-work-progress .section-title-wrapper {
